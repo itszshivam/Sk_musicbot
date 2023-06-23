@@ -233,10 +233,10 @@ stream_4 : "➻ **𝐒ƚαɾƚҽ𝐃 𝐒ƚɾҽαɱιɳ𝐆**\n\n✨ **𝐓ιƚ�
 # Inline Buttons
 
 #General Buttons
-CLOSE_BUTTON  : "↻ ᴄʟᴏsᴇ ↻"
-CLOSEMENU_BUTTON  : "↻ ᴄʟᴏsᴇ ↻"
+CLOSE_BUTTON  : "↻ 𝐂ʅσʂ𝐄 ↻"
+CLOSEMENU_BUTTON  : "↻ 𝐂ʅσʂ𝐄 ↻"
 BACK_BUTTON : "◁"
-UNBAN_BUTTON : "• ᴜɴʙᴀɴ •"
+UNBAN_BUTTON : "• 𝐔ɳႦα𝐍 •"
 
 #Lyrics
 L_B_1 : "🚀 ᴄʜᴇᴄᴋᴏᴜᴛ ʟʏʀɪᴄs ɴᴏᴡ"
@@ -338,8 +338,8 @@ sudo_1 : "{0} ɪs ᴀʟʀᴇᴀᴅʏ ᴀ sᴜᴅᴏ ᴜsᴇʀ."
 sudo_2 : "ᴀᴅᴅᴇᴅ **{0}** ᴛᴏ sᴜᴅᴏ ᴜsᴇʀs." 
 sudo_3 : "ɴᴏᴛ ᴀ ᴘᴀʀᴛ ᴏꜰ ʙᴏᴛ's sᴜᴅᴏ."
 sudo_4 : "ʀᴇᴍᴏᴠᴇᴅ ꜰʀᴏᴍ ʙᴏᴛ's sᴜᴅᴏ ᴜsᴇʀ."
-sudo_5 : "❣️<u> **𝐎ᴡɴᴇ𝐑:**</u>\n"
-sudo_6 : "\n✨<u> **𝐒ᴜᴅᴏᴇʀ𝐒:**</u>\n"
+sudo_5 : "💘<u> **𝐎ɯɳҽ𝐑:**</u>\n"
+sudo_6 : "\n🌹<u> **𝐒υԃԃσҽɾ𝐒:**</u>\n"
 sudo_7 : "ɴᴏ sᴜᴅᴏ ᴜsᴇʀs ғᴏᴜɴᴅ."
 
 #Block
