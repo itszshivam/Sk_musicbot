@@ -1,34 +1,34 @@
 <h2 align="center">
-    ──「 ˹ɴɪᴅʜɪ ✘ ᴍᴜsɪᴄ˼ 」──
+    ──「 ˹𝐈ɴᴄʀɪᴄɪʙʟ𝐄 ✘ 𝐌ᴜsɪ𝐂˼ 」──
 </h2>
 
 <p align="center">
-  <img src="https://telegra.ph/file/56d1760224589ee370186.jpg">
+  <img src="https://te.legra.ph/file/7cc6d77a976ea506629f1.jpg">
 </p>
 
 <p align="center">
-<a href="https://github.com/itsneerja/NidhiMusic/stargazers"><img src="https://img.shields.io/github/stars/AnonymousX1025/AnonXMusic?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
-<a href="https://github.com/itsneerja/NidhiMusic/network/members"> <img src="https://img.shields.io/github/forks/AnonymousX1025/AnonXMusic?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
-<a href="https://github.com/itsneerja/NidhiMusic/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://github.com/mrtosumemon/GODFATHERMUSICOP/stargazers"><img src="https://img.shields.io/github/stars/mrtosumemon/GODFATHERMUSICOP?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
+<a href="https://github.com/mrtosumemon/GODFATHERMUSICOP/network/members"> <img src="https://img.shields.io/github/forks/AnonymousX1025/AnonXMusic?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/mrtosumemon/GODFATHERMUSICOP/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
 <a href="https://github.com/AnonymousX1025/AnonXMusic/commits/AnonymousX1025"> <img src="https://img.shields.io/github/last-commit/AnonymousX1025/AnonXMusic?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
 </p>
 
 <p align="center">
-  <img src="https://telegra.ph/file/36be820a8775f0bfc773e.jpg">
+  <img src="https://te.legra.ph/file/da751d66ce23b80c2a65a.jpg">
 </p>
 
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/itsneerja/NidhiMusic"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/mrtosumemon/GODFATHERMUSICOP"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʟᴏᴄᴀʟ ʜᴏsᴛ/ ᴠᴘs 」─
 </h3>
 
-- Get your [Necessary Variables](https://github.com/itsneerja/NidhiMusic/blob/master/sample.env)
+- Get your [Necessary Variables](https://github.com/mrtosumemon/GODFATHERMUSIVOP/blob/master/sample.env)
 - Upgrade and Update by :
 `sudo apt-get update && sudo apt-get upgrade -y`
 - Install Ffmpeg by :
