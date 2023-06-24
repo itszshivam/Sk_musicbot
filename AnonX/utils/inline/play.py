@@ -63,6 +63,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             InlineKeyboardButton(
                 text="💘𝐍єтωσя𝐊💘", url="https://t.me/INCRICIBLE_NETWORK"
             ),
+        ],
         [
             InlineKeyboardButton(
                 text="💘𝐈и¢яι¢ιв𝐄💘", url="https://t.me/INCRICIBLE_CHAT"
