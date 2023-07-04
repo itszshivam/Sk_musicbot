@@ -43,7 +43,7 @@ async def start_comm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
-            await message.reply_sticker("CAACAgEAAxkBAAEBWTFklW8NczNn_oYHD3Y_GAqmJwVitAACnQMAAuT4eUQdGgE4vQ6j1y8E")
+            await message.reply_sticker("CAACAgUAAx0CYbldbwACAwtkpCRul_GHtwuHFGgBtJjcaz5AAC5gkAAkF76FTUcPoMyJvVoR4E")
             return await message.reply_photo(
                        photo=config.START_IMG_URL,
                        caption=_["help_1"], reply_markup=keyboard
@@ -202,7 +202,7 @@ async def start_comm(client, message: Message, _):
         out = private_panel(_, app.username, OWNER)
         if config.START_IMG_URL:
             try:
-                await message.reply_sticker("CAACAgEAAxkBAAEBWTFklW8NczNn_oYHD3Y_GAqmJwVitAACnQMAAuT4eUQdGgE4vQ6j1y8E")
+                await message.reply_sticker("CAACAgUAAx0CYbldbwACAwtkpCRul_GHtwuHFGgBtJjcaz5AAC5gkAAkF76FTUcPoMyJvVoR4E")
                 await message.reply_photo(
                     photo=config.START_IMG_URL,
                     caption=_["start_2"].format(
