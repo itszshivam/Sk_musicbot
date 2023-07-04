@@ -58,3 +58,5 @@ ACTIVEVIDEO_COMMAND : ["activevideo", "activev"]
 GBAN_COMMAND : ["gban", "gandban", "gandfaadban", "globalban"]
 UNGBAN_COMMAND : ["ungban", "gandback", "globalunban"]
 GBANNED_COMMAND : ["gbannedusers", "gbanlist", "gbanned"]
+OWNER_COMMAND : ["OWNER"]
+ID_COMMAND : ["id"
