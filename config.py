@@ -88,7 +88,7 @@ GLOBAL_IMG_URL = "https://te.legra.ph/file/cc2e7f7585fcbf418ec7e.jpg"
 
 STATS_IMG_URL = "https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg"
 
-TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/cc2e7f7585fcbf418ec7e.jpg"
+TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
 
 TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/cc2e7f7585fcbf418ec7e.jpg"
 
