@@ -13,7 +13,8 @@ def ul(_, message):
         for x in fk:
             url = "https://telegra.ph" + x
 
-        i.edit(f'🇾ᴏᴜʀ🇹ᴇʟᴇɢʀᴀᴘʜ 👉 {url}')
+        i.edit(f'🇾ᴏᴜʀ🇹ᴇʟᴇɢʀᴀᴘʜ 👉 {url}
             
     [ᴏᴡɴᴇʀ](buttonurl:https://t.me/fuck_that_and_fuck_you)
   
+')
