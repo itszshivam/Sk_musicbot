@@ -61,4 +61,4 @@ GBANNED_COMMAND : ["gbannedusers", "gbanlist", "gbanned"]
 OWNER_COMMAND : ["owner"]
 ID_COMMAND : ["id"]
 SHAYRI_COMMAND : ["shayri"]
-TAGALL_COMMAND : ["#all", "#tagall"
+TAGALL_COMMAND : ["#all", "#tagall", "#tag", ".tagmember", "@ᴀʟʟ"]
