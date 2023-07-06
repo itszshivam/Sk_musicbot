@@ -81,15 +81,11 @@ def help_pannel(_, START: Union[bool, int] = None):
                 InlineKeyboardButton(
                     text="💓𝐄χтя𝐀💓",
                     callback_data="help_callback hb13",
+                
                 ),
-                InlineKeyboardButton(
-                    text="❤𝐎ɯɳҽ𝐑❤",
-                    url="https:/t.me/fuck_that_and_fuck_you",
-                ),
-             
-            ]
+            ],
             mark,
-        ]
+                    ]
     )
     return upl
 
