@@ -23,7 +23,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌹 σԃϝαƚԋҽ 🌹", url=f"https://t.me/YOUR_GODFATHER_XD")
+                        "🌹 𝐆σԃϝαƚԋҽ𝐑 🌹", url=f"https://t.me/YOUR_GODFATHER_XD")
                 ]
             ]
         ),
@@ -41,7 +41,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌹 σԃϝαƚԋҽ 🌹", url=f"https://t.me/YOUR_GODFATHER_XD")
+                        "🌹 𝐆σԃϝαƚԋҽ𝐑 🌹", url=f"https://t.me/YOUR_GODFATHER_XD")
                 ]
             ]
         ),
@@ -53,54 +53,54 @@ async def help(client: Client, message: Message):
 
 
 @app.on_message(
-    filters.command("repo")
+    filters.command("support")
     & filters.group
     & ~filters.edited & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/175b6d309dd3b2c9a2051.jpg",
+        photo=f"https://te.legra.ph/file/987c3d0db44f6dd58fb2e.jpg",
         caption=f"""🍁𝐂ʅυƈ𝐊🥰𝐁ҽʅσ𝐖💝𝐁υƚƚσ𝐍✨𝐓σ🙊𝐆ҽ𝐓🌱𝐒υρρσɾ𝐓🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌱𝐒υρρσɾ𝐓🌱", url=f"𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐇𝐀𝐈 𝐀𝐁 ")
+                        "🌱𝐒υρρσɾ𝐓🌱", url=f"https://t.me/INCRICIBLE")
                 ]
             ]
         ),
     )
 
 @app.on_message(
-    filters.command("source")
+    filters.command("support")
     & filters.group
     & ~filters.edited & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/175b6d309dd3b2c9a2051.jpg",
+        photo=f"https://te.legra.ph/file/987c3d0db44f6dd58fb2e.jpg",
         caption=f"""🍁𝐂ʅιƈ𝐊🥰𝐁ҽʅσ𝐖💝𝐁υƚƚσ𝐍✨𝐓σ🙊𝐆ҽ𝐓🌱𝐒υρρσ𝐓🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌱𝐒υρρσɾ𝐓🌱", url=f"𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐇𝐀𝐈 𝐀𝐁")
+                        "🌱𝐒υρρσɾ𝐓🌱", url=f"https://t.me/INCRICIBLE")
                 ]
             ]
         ),
     )
 
 @app.on_message(
-    filters.command("repo")
+    filters.command("support")
     & filters.private
     & ~filters.edited & filters.private & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/175b6d309dd3b2c9a2051.jpg",
+        photo=f"https://te.legra.ph/file/987c3d0db44f6dd58fb2e.jpg",
         caption=f"""🍁𝐂ʅιƈ𝐊🥰𝐁ҽʅσ𝐖💝𝐁υƚƚσ𝐍✨𝐓σ🙊𝐆ҽ𝐓🌱𝐒υρρσɾ𝐓🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌱𝐒υρρσɾ𝐓🌱", url=f"𝐏𝐑𝐈𝐀𝐕𝐓𝐄 𝐇𝐀𝐈 𝐀𝐁")
+                        "🌱𝐒υρρσɾ𝐓🌱", url=f"https://t.me/INCRICIBLE")
                 ]
             ]
         ),
