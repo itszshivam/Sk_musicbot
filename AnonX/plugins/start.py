@@ -1,3 +1,4 @@
+
 import asyncio
 import time
 
@@ -10,11 +11,11 @@ import config
 from config import BANNED_USERS
 from config import OWNER_ID
 from strings import get_command, get_string
-from AnonX import Telegram, YouTube, app
-from AnonX.misc import SUDOERS, _boot_
-from AnonX.plugins.playlist import del_plist_msg
-from AnonX.plugins.sudoers import sudoers_list
-from AnonX.utils.database import (add_served_chat,
+from Anonx import Telegram, YouTube, app
+from Anonx.misc import SUDOERS, _boot_
+from Anonx.plugins.playlist import del_plist_msg
+from Anonx.plugins.sudoers import sudoers_list
+from Anonx.utils.database import (add_served_chat,
                                        add_served_user,
                                        get_served_chats,
                                        get_served_users,
@@ -22,15 +23,15 @@ from AnonX.utils.database import (add_served_chat,
                                        get_assistant, get_lang,
                                        get_userss, is_on_off,
                                        is_served_private_chat)
-from AnonX.utils.decorators.language import LanguageStart
-from AnonX.utils.formatters import get_readable_time
-from AnonX.utils.inline import (help_pannel, private_panel,
+from Anonx.utils.decorators.language import LanguageStart
+from Anonx.utils.formatters import get_readable_time
+from Anonx.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
 loop = asyncio.get_running_loop()
 
 
-app.on_message(
+@app.on_message(
     filters.command(get_command("START_COMMAND"))
     & filters.private
     & ~filters.edited
@@ -88,7 +89,7 @@ async def start_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/jam_music_updates) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/jam_music_support) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                     else:
                         msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
@@ -172,7 +173,7 @@ async def start_comm(client, message: Message, _):
 ● 📡 **𝐋𝐢𝐧𝐤 ➪ [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})**☆.♡
 •✰˚♫. * ● ¸ . ★ .¸¸♡¸¸★ :●. *°☆ ¸. ● .. ✷
 
-☆............𝙱𝚈 » [ʀᴏᴘʀɪsʜ](https://t.me/about_rishu)............☆"""
+☆............𝙱𝚈 » [ʀᴏᴘʀɪsʜ](https://t.me/roprish)............☆"""
             key = InlineKeyboardMarkup(
                 [
                     [
@@ -264,85 +265,6 @@ async def welcome(client, message: Message):
         if not await is_served_private_chat(message.chat.id):
             await message.reply_text(
                 "**𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐉𝐚𝐦 𝐌𝐮𝐬𝐢𝐜 𝐑𝐨𝐛𝐨𝐭**\n\n𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐓𝐡𝐞 𝐂𝐡𝐚𝐭𝐬 𝐀𝐥𝐥𝐨𝐰𝐞𝐝 𝐁𝐲 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫, 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐈𝐧 𝐌𝐲 𝐎𝐰𝐧𝐞𝐫'𝐬 𝐏𝐦 𝐓𝐨 𝐀𝐥𝐥𝐨𝐰 𝐘𝐨𝐮𝐫 𝐂𝐡𝐚𝐭 𝐀𝐧𝐝 𝐈𝐟 𝐘𝐨𝐮 𝐃𝐨𝐧𝐭 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐃𝐨 𝐓𝐡𝐞𝐧 𝐌𝐚𝐚 𝐂𝐡𝐮𝐝𝐚𝐨👿 𝐛𝐜𝐨𝐳 𝐈'𝐦 𝐋𝐞𝐚𝐯𝐢𝐧𝐠..."
-            )
-            return await app.leave_chat(message.chat.id)
-    else:
-        await add_served_chat(chat_id)
-    for member in message.new_chat_members:
-        try:
-            language = await get_lang(message.chat.id)
-            _ = get_string(language)
-            if member.id == app.id:
-                chat_type = message.chat.type
-                if chat_type != "supergroup":
-                    await message.reply_text(_["start_6"])
-                    return await app.leave_chat(message.chat.id)
-                if chat_id in await blacklisted_chats():
-                    await message.reply_text(
-                        _["start_7"].format(
-                            f"https://t.me/{app.username}?start=sudolist"
-                        )
-                    )
-                    return await app.leave_chat(chat_id)
-                userbot = await get_assistant(message.chat.id)
-                OWNER = OWNER_ID[0]
-                out = start_pannel(_, app.username, OWNER)
-                await message.reply_photo(
-                    photo=config.START_IMG_URL,
-                    caption=_["start_3"].format(
-                        config.MUSIC_BOT_NAME,
-                        userbot.username,
-                        userbot.id,
-                    ),
-                    reply_markup=InlineKeyboardMarkup(out),
-                )
-            if member.id in config.OWNER_ID:
-                return await message.reply_text(
-                    _["start_4"].format(
-                        config.MUSIC_BOT_NAME, member.mention
-                    )
-                )
-            if member.id in SUDOERS:
-                return await message.reply_text(
-                    _["start_5"].format(
-                        config.MUSIC_BOT_NAME, member.mention
-                    )
-                )
-            return
-        except:
-            return
-            )
-
-
-@app.on_message(
-    filters.command(get_command("START_COMMAND"))
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
-@LanguageStart
-async def testbot(client, message: Message, _):
-    OWNER = OWNER_ID[0]
-    out = start_pannel(_, app.username, OWNER)
-    return await message.reply_photo(
-               photo=config.START_IMG_URL,
-               caption=_["start_1"].format(
-            message.chat.title, config.MUSIC_BOT_NAME
-        ),
-        reply_markup=InlineKeyboardMarkup(out),
-    )
-
-
-welcome_group = 2
-
-
-@app.on_message(filters.new_chat_members, group=welcome_group)
-async def welcome(client, message: Message):
-    chat_id = message.chat.id
-    if config.PRIVATE_BOT_MODE == str(True):
-        if not await is_served_private_chat(message.chat.id):
-            await message.reply_text(
-                "**ᴩʀɪᴠᴀᴛᴇ ᴍᴜsɪᴄ ʙᴏᴛ**\n\nᴏɴʟʏ ғᴏʀ ᴛʜᴇ ᴄʜᴀᴛs ᴀᴜᴛʜᴏʀɪsᴇᴅ ʙʏ ᴍʏ ᴏᴡɴᴇʀ, ʀᴇǫᴜᴇsᴛ ɪɴ ᴍʏ ᴏᴡɴᴇʀ's ᴩᴍ ᴛᴏ ᴀᴜᴛʜᴏʀɪsᴇ ʏᴏᴜʀ ᴄʜᴀᴛ ᴀɴᴅ ɪғ ʏᴏᴜ ᴅᴏɴ'ᴛ ᴡᴀɴᴛ ᴛᴏ ᴅᴏ sᴏ ᴛʜᴇɴ ғᴜ*ᴋ ᴏғғ ʙᴇᴄᴀᴜsᴇ ɪ'ᴍ ʟᴇᴀᴠɪɴɢ."
             )
             return await app.leave_chat(message.chat.id)
     else:
