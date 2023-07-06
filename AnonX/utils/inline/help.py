@@ -85,7 +85,7 @@ def help_pannel(_, START: Union[bool, int] = None):
                 ),
             ],
             mark,
-                    ]
+        ]
     )
     return upl
 
@@ -111,7 +111,7 @@ def private_help_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="❄ 𝐇ᴇʟ𝐏 ❄",
+                text="🎭 𝐇𝐄𝐋𝐏 🎭",
                 callback_data="settings_back_helper",
             ),
         ],
