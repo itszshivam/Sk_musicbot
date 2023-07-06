@@ -11,11 +11,11 @@ import config
 from config import BANNED_USERS
 from config import OWNER_ID
 from strings import get_command, get_string
-from Anonx import Telegram, YouTube, app
-from Anonx.misc import SUDOERS, _boot_
-from Anonx.plugins.playlist import del_plist_msg
-from Anonx.plugins.sudoers import sudoers_list
-from Anonx.utils.database import (add_served_chat,
+from AnonX import Telegram, YouTube, app
+from AnonX.misc import SUDOERS, _boot_
+from AnonX.plugins.playlist import del_plist_msg
+from AnonX.plugins.sudoers import sudoers_list
+from AnonX.utils.database import (add_served_chat,
                                        add_served_user,
                                        get_served_chats,
                                        get_served_users,
@@ -23,9 +23,9 @@ from Anonx.utils.database import (add_served_chat,
                                        get_assistant, get_lang,
                                        get_userss, is_on_off,
                                        is_served_private_chat)
-from Anonx.utils.decorators.language import LanguageStart
-from Anonx.utils.formatters import get_readable_time
-from Anonx.utils.inline import (help_pannel, private_panel,
+from AnonX.utils.decorators.language import LanguageStart
+from AnonX.utils.formatters import get_readable_time
+from AnonX.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
 loop = asyncio.get_running_loop()
