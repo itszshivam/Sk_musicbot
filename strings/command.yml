@@ -1,5 +1,5 @@
 PING_COMMAND : ["ping", "alive"]
-START_COMMAND : ["hsisjt", "jskaoamdxboasjdbz"]
+START_COMMAND : ["hsisjt", "rmmusic"]
 HELP_COMMAND : ["help"]
 SETTINGS_COMMAND : ["settings", "setting"]
 RELOAD_COMMAND : ["admincache", "reload"]
