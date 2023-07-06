@@ -18,12 +18,12 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://te.legra.ph/file/8998ddca2f42a4fac4efd.jpg",
-        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐃𝐌❤️𝐎𝐖𝐍𝐄𝐑🍁""",
+        caption=f"""🍁𝐂ʅιƈ𝐊🥰𝐁ҽʅσ𝐖💝𝐁υƚƚσ𝐍✨𝐓σ🙊𝐃ɱ❤️𝐎ɯɳҽɾ𝐑🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌹 𝐑𝐎𝐏 𝐑𝐈𝐒𝐇 🌹", url=f"https://t.me/YOUR_GODFATHER_XD")
+                        "🌹 σԃϝαƚԋҽ 🌹", url=f"https://t.me/YOUR_GODFATHER_XD")
                 ]
             ]
         ),
@@ -36,12 +36,12 @@ async def help(client: Client, message: Message):
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://te.legra.ph/file/8998ddca2f42a4fac4efd.jpg",
-        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐃𝐌❤️𝐎𝐖𝐍𝐄𝐑🍁""",
+        caption=f"""🍁𝐂ʅιƈ𝐊🥰𝐁ҽʅσ𝐖💝𝐁υƚƚσ𝐍✨𝐓σ🙊𝐃ɱ❤️𝐎ɯɳҽ𝐑🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌹 𝐑𝐎𝐏 𝐑𝐈𝐒𝐇 🌹", url=f"https://t.me/YOUR_GODFATHER_XD")
+                        "🌹 σԃϝαƚԋҽ 🌹", url=f"https://t.me/YOUR_GODFATHER_XD")
                 ]
             ]
         ),
@@ -59,12 +59,12 @@ async def help(client: Client, message: Message):
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://te.legra.ph/file/175b6d309dd3b2c9a2051.jpg",
-        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
+        caption=f"""🍁𝐂ʅυƈ𝐊🥰𝐁ҽʅσ𝐖💝𝐁υƚƚσ𝐍✨𝐓σ🙊𝐆ҽ𝐓🌱𝐒υρρσɾ𝐓🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐇𝐀𝐈 𝐀𝐁 ")
+                        "🌱𝐒υρρσɾ𝐓🌱", url=f"𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐇𝐀𝐈 𝐀𝐁 ")
                 ]
             ]
         ),
@@ -77,12 +77,12 @@ async def help(client: Client, message: Message):
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://te.legra.ph/file/175b6d309dd3b2c9a2051.jpg",
-        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
+        caption=f"""🍁𝐂ʅιƈ𝐊🥰𝐁ҽʅσ𝐖💝𝐁υƚƚσ𝐍✨𝐓σ🙊𝐆ҽ𝐓🌱𝐒υρρσ𝐓🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐇𝐀𝐈 𝐀𝐁")
+                        "🌱𝐒υρρσɾ𝐓🌱", url=f"𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐇𝐀𝐈 𝐀𝐁")
                 ]
             ]
         ),
@@ -95,12 +95,12 @@ async def help(client: Client, message: Message):
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://te.legra.ph/file/175b6d309dd3b2c9a2051.jpg",
-        caption=f"""🍁𝐂𝐋𝐈𝐂𝐊🥰𝐁𝐄𝐋𝐎𝐖💝𝐁𝐔𝐓𝐓𝐎𝐍✨𝐓𝐎🙊𝐆𝐄𝐓🌱𝐑𝐄𝐏𝐎🍁""",
+        caption=f"""🍁𝐂ʅιƈ𝐊🥰𝐁ҽʅσ𝐖💝𝐁υƚƚσ𝐍✨𝐓σ🙊𝐆ҽ𝐓🌱𝐒υρρσɾ𝐓🍁""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"𝐏𝐑𝐈𝐀𝐕𝐓𝐄 𝐇𝐀𝐈 𝐀𝐁")
+                        "🌱𝐒υρρσɾ𝐓🌱", url=f"𝐏𝐑𝐈𝐀𝐕𝐓𝐄 𝐇𝐀𝐈 𝐀𝐁")
                 ]
             ]
         ),
