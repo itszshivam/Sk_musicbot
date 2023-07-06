@@ -48,9 +48,9 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("jam_music_support")
-                await self.one.join_chat("jam_music_updates")
-                await self.one.join_chat("roprish")
+                await self.one.join_chat("incricible_network")
+                await self.one.join_chat("incricible")
+                await self.one.join_chat("about_godfather")
             except:
                 pass
             assistants.append(1)
