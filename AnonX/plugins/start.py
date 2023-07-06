@@ -113,7 +113,7 @@ async def start_comm(client, message: Message, _):
                 sender_name = message.from_user.first_name
                 return await app.send_message(
                     config.LOG_GROUP_ID,
-                    f"{message.from_user.mention} 𝐉𝐮𝐬𝐭 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 𝐓𝐡𝐞 𝐕𝐢𝐩 𝐁𝐨𝐭 𝐓𝐨 𝐂𝐡𝐞𝐜𝐤 𝐒𝐨𝐧𝐠 𝐈𝐧𝐟𝐨 <code>𝐒𝐮𝐝𝐨𝐥𝐢𝐬𝐭</code>\n\n**𝐔𝐒𝐄𝐑 𝐈𝐃:-** {sender_id}\n**𝐍𝐀𝐌𝐄:-** {sender_name}",
+                    f"{message.from_user.mention} 𝐉𝐮𝐬𝐭 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 𝐓𝐡𝐞 Jam 𝐁𝐨𝐭 𝐓𝐨 𝐂𝐡𝐞𝐜𝐤 𝐒𝐨𝐧𝐠 𝐈𝐧𝐟𝐨 <code>𝐒𝐮𝐝𝐨𝐥𝐢𝐬𝐭</code>\n\n**𝐔𝐒𝐄𝐑 𝐈𝐃:-** {sender_id}\n**𝐍𝐀𝐌𝐄:-** {sender_name}",
                 )
             return
         if name[0:3] == "lyr":
