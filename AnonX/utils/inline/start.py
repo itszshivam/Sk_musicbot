@@ -15,6 +15,12 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         ],
         [
             InlineKeyboardButton(
+                text="❤️𝐄χтя𝐀",
+                callback_data="settings_back_helper",
+            )
+        ],
+        [
+            InlineKeyboardButton(
                 text="💖𝐇ҽʅ𝐏💖",
                 callback_data="settings_back_helper",
             ),
