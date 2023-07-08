@@ -136,7 +136,7 @@ TAGSRT = [ " **𝐇𝐞𝐲 𝐁𝐚𝐛𝐲 𝐊𝐚𝐡𝐚 𝐇𝐨🥱** ",
            " **𝐆𝐨𝐨𝐝 𝐍8 𝐉𝐢 𝐁𝐡𝐮𝐭 𝐑𝐚𝐭 𝐇𝐨 𝐠𝐲𝐢🥰** ",
            ]
 
-@app.on_message(filters.command(["etag", "all", "tagmember"], prefixes=["/", "@", "#"]))
+@app.on_message(filters.command(["etag", "eftag", "tagmember"], prefixes=["/", "@", "#"]))
 async def mentionall(client, message):
     chat_id = message.chat.id
     if message.chat.type == "private":
@@ -154,7 +154,7 @@ async def mentionall(client, message):
         return await message.reply("Only admin can use this command!")
 
     if message.reply_to_message and message.text:
-        return await message.reply("/tagall hello 👈 Try this next time for tagging..")
+        return await message.reply("/etag hello 👈 Try this next time for tagging..")
     elif message.text:
         mode = "text_on_cmd"
         msg = message.text
