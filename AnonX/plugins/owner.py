@@ -23,7 +23,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌹 𝐆σԃϝαƚԋҽ𝐑 🌹", url=f"https://t.me/YOUR_GODFATHER_XD")
+                        "🌹 ʂɧı۷ąɱ 🌹", url=f"https://t.me/itsz_shivam")
                 ]
             ]
         ),
@@ -41,7 +41,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌹 𝐆σԃϝαƚԋҽ𝐑 🌹", url=f"https://t.me/YOUR_GODFATHER_XD")
+                        "🌹 ʂɧı۷ąɱ 🌹", url=f"https://t.me/itsz_shivam")
                 ]
             ]
         ),
@@ -64,7 +64,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌱𝐒υρρσɾ𝐓🌱", url=f"https://t.me/INCRICIBLE")
+                        "🌱𝐒υρρσɾ𝐓🌱", url=f"https://t.me/fun_here")
                 ]
             ]
         ),
@@ -82,7 +82,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌱𝐒υρρσɾ𝐓🌱", url=f"https://t.me/INCRICIBLE")
+                        "🌱𝐒υρρσɾ𝐓🌱", url=f"https://t.me/fun_here")
                 ]
             ]
         ),
@@ -100,7 +100,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌱𝐒υρρσɾ𝐓🌱", url=f"https://t.me/INCRICIBLE")
+                        "🌱𝐒υρρσɾ𝐓🌱", url=f"https://t.me/fun_here")
                 ]
             ]
         ),
