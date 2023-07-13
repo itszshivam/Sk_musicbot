@@ -66,7 +66,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✨𝐒υρρσɾ𝐓✨", url=f"https://t.me/INCRICIBLE"),
+                        "✨𝐒υρρσɾ𝐓✨", url=f"https://t.me/itsz_shivam"),
                      ]
             ]
         ),
@@ -83,7 +83,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💘𝐂ԋαɳɳҽ𝐋💘", url=f"https://t.me/INCRICIBLE_NETWORK"),
+                        "💘𝐂ԋαɳɳҽ𝐋💘", url=f"https://t.me/about_skshivam"),
                      ]
             ]
         ),
