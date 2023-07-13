@@ -16,7 +16,7 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         [
             InlineKeyboardButton(
                 text="❤️𝐎ɯɳҽ𝐑❤️",
-                url=f"https://t.me/your_godfather_xd",
+                url=f"https://t.me/itsz_shivam",
             )
         ],
         [
@@ -53,7 +53,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 text="💘𝐆ɾσυ𝐏💘", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="💞𝐔ρ∂αтє𝐒💞", url=f"https://t.me/Incricible_Network"
+                text="💞𝐔ρ∂αтє𝐒💞", url=f"https://t.me/about_skshivam"
             )
         ],
      ]
