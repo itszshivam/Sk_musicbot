@@ -75,34 +75,34 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/14c628ff007322601d361.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/6b6c8ae11dd94dd03d93a.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/dc896d82bcff8167858f5.jpg",
+    "https://telegra.ph/file/b11d2a1aecf02143b96c7.jpg",
 )
 
-PLAYLIST_IMG_URL = "https://telegra.ph/file/14c628ff007322601d361.jpg"
+PLAYLIST_IMG_URL = "https://telegra.ph/file/6b6c8ae11dd94dd03d93a.jpg"
 
-GLOBAL_IMG_URL = "https://telegra.ph/file/14c628ff007322601d361.jpg"
+GLOBAL_IMG_URL = "https://telegra.ph/file/6b6c8ae11dd94dd03d93a.jpg"
 
-STATS_IMG_URL = "https://telegra.ph/file/14c628ff007322601d361.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/6b6c8ae11dd94dd03d93a.jpg"
 
-TELEGRAM_AUDIO_URL = "https://telegra.ph/file/14c628ff007322601d361.jpg"
+TELEGRAM_AUDIO_URL = "https://telegra.ph/file/6b6c8ae11dd94dd03d93a.jpg"
 
-TELEGRAM_VIDEO_URL = "https://telegra.ph/file/dc896d82bcff8167858f5.jpg"
+TELEGRAM_VIDEO_URL = "https://telegra.ph/file/b11d2a1aecf02143b96c7.jpg"
 
-STREAM_IMG_URL = "https://telegra.ph/file/dc896d82bcff8167858f5.jpg"
+STREAM_IMG_URL = "https://telegra.ph/file/b11d2a1aecf02143b96c7.jpg"
 
-SOUNCLOUD_IMG_URL = "https://telegra.ph/file/dc896d82bcff8167858f5.jpg"
+SOUNCLOUD_IMG_URL = "https://telegra.ph/file/b11d2a1aecf02143b96c7.jpg"
 
-YOUTUBE_IMG_URL = "https://telegra.ph/file/dc896d82bcff8167858f5.jpg"
+YOUTUBE_IMG_URL = "https://telegra.ph/file/b11d2a1aecf02143b96c7.jpg"
 
-SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/dc896d82bcff8167858f5.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/b11d2a1aecf02143b96c7.jpg"
 
-SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/dc896d82bcff8167858f5.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/b11d2a1aecf02143b96c7.jpg"
 
-SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/dc896d82bcff8167858f5.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/b11d2a1aecf02143b96c7.jpg"
 
 
 def time_to_seconds(time):
@@ -129,9 +129,9 @@ if UPSTREAM_REPO:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://telegra.ph/file/dc896d82bcff8167858f5.jpg"
+            PING_IMG_URL = "https://telegra.ph/file/b11d2a1aecf02143b96c7.jpg"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://telegra.ph/file/14c628ff007322601d361.jpg"
+            START_IMG_URL = "https://telegra.ph/file/6b6c8ae11dd94dd03d93a.jpg"
