@@ -1,4 +1,4 @@
-From pyrogram import Client, filters
+from pyrogram import Client, filters
 from pyrogram.types import Message
 from config import LOG_GROUP_ID
 from AnonX import app
