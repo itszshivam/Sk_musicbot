@@ -25,4 +25,4 @@ def ul(_, message):
     elif reply and not reply.media:
         message.reply_text("ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ᴀɴʏ ᴍᴇᴅɪᴀ ᴛᴏ ᴜᴘʟᴏᴀᴅ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ...")
     else:
-        message.reply_text("ᴘʟᴇᴀsᴇ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇᴅɪᴀ ᴍᴇssᴀɢᴇ..."
+        message.reply_text("ᴘʟᴇᴀsᴇ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇᴅɪᴀ ᴍᴇssᴀɢᴇ...")
