@@ -78,7 +78,7 @@ def help_pannel(_, START: Union[bool, int] = None):
                 ),
             ],
             [
-                InlinekeyboardButton(
+                InlineKeyboardButton(
                     text="🎧𝐃σωɳℓσα𝐃🎧",
                     callback_data="help_callback hb14",
                 ),
