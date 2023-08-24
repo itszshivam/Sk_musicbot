@@ -122,4 +122,103 @@ async def gen_thumb(videoid, user_id):
         arial = ImageFont.truetype("AnonX/assets/font2.ttf", 65)
         ImageFont.truetype("AnonX/assets/font.ttf", 30)
         para = textwrap.wrap(title, width=26)
-        try
+        try:
+            draw.text(
+                (70, 25),
+                f"STARTED PLAYING...",
+                fill="white",
+                stroke_width=5,
+                stroke_fill="black",
+                font=arial,
+            )
+            if para[0]:
+                text_w, text_h = draw.textsize(f"{para[0]}", font=font)
+                draw.text(
+                    (110, 130),
+                    f"{para[0]}",
+                    fill="white",
+                    stroke_width=1,
+                    stroke_fill="yellow",
+                    font=font,
+                )
+            if para[1]:
+                text_w, text_h = draw.textsize(f"{para[1]}", font=font)
+                draw.text(
+                    (110, 183),
+                    f"{para[1]}",
+                    fill="white",
+                    stroke_width=1,
+                    stroke_fill="yellow",
+                    font=font,
+                )
+        except:
+            pass
+        text_w, text_h = draw.textsize(f"Duration: {duration} Mins", font=arial)
+        draw.text(
+            ((1280 - 45) / 1.46, 580),
+            f"{duration}",
+            fill="white",
+            stroke_width=2,
+            stroke_fill="black",
+            font=font,
+        )
+        try:
+            os.remove(f"cache/thumb{videoid}.png")
+        except:
+            pass
+        background.save(f"cache/{videoid}_{user_id}.png")
+        return f"cache/{videoid}_{user_id}.png"
+    except Exception as e:
+        print(e)
+        return YOUTUBE_IMG_URL
+
+
+async def gen_qthumb(videoid, user_id):
+    if os.path.isfile(f"cache/que{videoid}_{user_id}.png"):
+        return f"cache/que{videoid}_{user_id}.png"
+    url = f"https://www.youtube.com/watch?v={videoid}"
+    try:
+        results = VideosSearch(url, limit=1)
+        for result in (await results.next())["result"]:
+            try:
+                title = result["title"]
+                title = re.sub("\W+", " ", title)
+                title = title.title()
+            except:
+                title = "Unsupported Title"
+            try:
+                duration = result["duration"]
+            except:
+                duration = "Unknown"
+            thumbnail = result["thumbnails"][0]["url"].split("?")[0]
+            try:
+                result["viewCount"]["short"]
+            except:
+                pass
+            try:
+                result["channel"]["name"]
+            except:
+                pass
+
+        async with aiohttp.ClientSession() as session:
+            async with session.get(thumbnail) as resp:
+                if resp.status == 200:
+                    f = await aiofiles.open(f"cache/thumb{videoid}.png", mode="wb")
+                    await f.write(await resp.read())
+                    await f.close()
+
+        try:
+            wxyz = await app.get_profile_photos(user_id)
+            wxy = await app.download_media(wxyz[0]['file_id'], file_name=f'{user_id}.jpg')
+        except:
+            hehe = await app.get_profile_photos(app.id)
+            wxy = await app.download_media(hehe[0]['file_id'], file_name=f'{app.id}.jpg')
+        xy = Image.open(wxy)
+        a = Image.new('L', [640, 640], 0)
+        b = ImageDraw.Draw(a)
+        b.pieslice([(0, 0), (640,640)], 0, 360, fill = 255, outline = "white")
+        c = np.array(xy)
+        d = np.array(a)
+        e = np.dstack((c, d))
+        f = Image.fromarray(e)
+        x = f.resize((210, 210))
