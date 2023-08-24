@@ -222,3 +222,96 @@ async def gen_qthumb(videoid, user_id):
         e = np.dstack((c, d))
         f = Image.fromarray(e)
         x = f.resize((210, 210))
+
+youtube = Image.open(f"cache/thumb{videoid}.png")
+        bg = Image.open(f"AnonX/assets/anonx.png")
+        image1 = changeImageSize(1280, 720, youtube)
+        image2 = image1.convert("RGBA")
+        background = image2.filter(filter=ImageFilter.BoxBlur(20))
+        enhancer = ImageEnhance.Brightness(background)
+        background = enhancer.enhance(0.6)
+
+        image3 = changeImageSize(1280, 720, bg)
+        image5 = image3.convert("RGBA")
+        Image.alpha_composite(background, image5).save(f"cache/temp{videoid}.png")
+
+        Xcenter = youtube.width / 2
+        Ycenter = youtube.height / 2
+        x1 = Xcenter - 250
+        y1 = Ycenter - 250
+        x2 = Xcenter + 250
+        y2 = Ycenter + 250
+        logo = youtube.crop((x1, y1, x2, y2))
+        logo.thumbnail((520, 520), Image.LANCZOS)
+        logo.save(f"cache/chop{videoid}.png")
+        if not os.path.isfile(f"cache/cropped{videoid}.png"):
+            im = Image.open(f"cache/chop{videoid}.png").convert("RGBA")
+            add_corners(im)
+            im.save(f"cache/cropped{videoid}.png")
+
+        crop_img = Image.open(f"cache/cropped{videoid}.png")
+        logo = crop_img.convert("RGBA")
+        logo.thumbnail((385, 385), Image.LANCZOS)
+        width = int((1280 - 380) / 1.22)
+        background = Image.open(f"cache/temp{videoid}.png")
+        background.paste(logo, (width + 1, 28), mask=logo)
+        background.paste(x, (965, 420), mask=x)
+        background.paste(image3, (0, 0), mask=image3)
+
+        draw = ImageDraw.Draw(background)
+        font = ImageFont.truetype("AnonX/assets/font2.ttf", 45)
+        ImageFont.truetype("AnonX/assets/font2.ttf", 70)
+        arial = ImageFont.truetype("AnonX/assets/font2.ttf", 65)
+        ImageFont.truetype("AnonX/assets/font.ttf", 30)
+        para = textwrap.wrap(title, width=26)
+        try:
+            draw.text(
+                (70, 25),
+                "ADDED TO QUEUE...",
+                fill="white",
+                stroke_width=5,
+                stroke_fill="black",
+                font=arial,
+            )
+            if para[0]:
+                text_w, text_h = draw.textsize(f"{para[0]}", font=font)
+                draw.text(
+                    (110, 130),
+                    f"{para[0]}",
+                    fill="white",
+                    stroke_width=1,
+                    stroke_fill="yellow",
+                    font=font,
+                )
+            if para[1]:
+                text_w, text_h = draw.textsize(f"{para[1]}", font=font)
+                draw.text(
+                    (110, 183),
+                    f"{para[1]}",
+                    fill="white",
+                    stroke_width=1,
+                    stroke_fill="yellow",
+                    font=font,
+                )
+        except:
+            pass
+        text_w, text_h = draw.textsize(f"Duration: {duration} Mins", font=arial)
+        draw.text(
+            ((1280 - 45) / 1.46, 580),
+            f" {duration}",
+            fill="white",
+            stroke_width=2,
+            stroke_fill="black",
+            font=font,
+        )
+
+        try:
+            os.remove(f"cache/thumb{videoid}.png")
+        except:
+            pass
+        file = f"cache/que{videoid}_{user_id}.png"
+        background.save(f"cache/que{videoid}_{user_id}.png")
+        return f"cache/que{videoid}_{user_id}.png"
+    except Exception as e:
+        print(e)
+        return YOUTUBE_IMG_URL
