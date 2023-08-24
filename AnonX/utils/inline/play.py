@@ -16,7 +16,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     anon = math.floor(percentage)
     if 0 < anon <= 2:
-        bar = "⚡ѕтαяє∂ ρℓαყเɳɠ⚡"
+        bar = "⚡𝐒тαятє𝐃 𝐏ℓαყเɳ𝐆⚡"
     elif 2 < anon < 3:
         bar = "ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩ♡ﮩ٨ـ"
     elif 3 <= anon < 4:
@@ -211,7 +211,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
+                text=f"{dur} {bar} {played}",
                 callback_data="GetTimer",
             )
         ],
@@ -232,23 +232,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             InlineKeyboardButton(
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="💘𝐔ρ∂αтє𝐒💘", url="https://t.me/about_skshivam"
-            ),
-        
-            InlineKeyboardButton(
-                text="💘𝐒υρρσят𝐓💘", url="https://t.me/fun_here"
-            ),
         ],    
-        [
+        [          
             InlineKeyboardButton(
-                text="🖤𝐎ɯɳҽ𝐑🖤", url="https://t.me/itsz_shivam"
-            ),
-        
-            InlineKeyboardButton(
-                text="🌹 𝐂ʅσʂ𝐄 🌹", callback_data=f"close"
+                text="🌹 𝐂ℓσʂ𝐄 🌹", callback_data=f"close"
             )
         ],
     ]
@@ -260,7 +247,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     anon = math.floor(percentage)
     if 0 < anon <= 2:
-        bar = "⚡ѕтαяє∂ ρℓαყเɳɠ⚡"
+        bar = "⚡𝐒тαятє𝐃 𝐏ℓαყเɳ𝐆⚡"
     elif 2 < anon < 3:
         bar = "ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩ♡ﮩ٨ـ"
     elif 3 <= anon < 4:
@@ -455,7 +442,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
+                text=f"{dur} {bar} {played}",
                 callback_data="GetTimer",
             )
         ],
@@ -479,20 +466,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="💘𝐔ρ∂αтє𝐒💘", url="https://t.me/about_skshivam"
-            ),
-        
-            InlineKeyboardButton(
-                text="💘𝐒υρρσят𝐓💘", url="https://t.me/fun_here"
-            ),
-        ],    
-        [
-            InlineKeyboardButton(
-                text="🖤𝐎ɯɳҽ𝐑🖤", url="https://t.me/itsz_shivam"
-            ),
-        
-            InlineKeyboardButton(
-                text="🌹 𝐂ʅσʂ𝐄 🌹", callback_data=f"close"
+                text="🌹 𝐂ℓσʂ𝐄 🌹", callback_data=f"close"
             )
         ],
     ]
