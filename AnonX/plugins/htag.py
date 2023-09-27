@@ -74,7 +74,7 @@ TAGMES = [ " **चलो एक पार्टी करते हैं 🥳�
 
 
 
-@app.on_message(filters.command(["hstag"," hstag"], prefixes=["/", "@", "#"]))
+@app.on_message(filters.command(["htag"], prefixes=["/", "@", "#"]))
 async def mentionall(client, message):
     chat_id = message.chat.id
     if message.chat.type == "private":
