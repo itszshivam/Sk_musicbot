@@ -53,7 +53,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 text="💘𝐆ɾσυ𝐏💘", url=config.SUPPORT_GROUP
             ),
             InlineKeyboardButton(
-                text="💞𝐔ρ∂αтє𝐒💞", url=f"https://t.me/about_skshivam"
+                text="💞𝐂нαииє𝐋💞", url=f"https://t.me/over_powered"
             )
         ],
      ]
