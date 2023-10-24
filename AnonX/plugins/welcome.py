@@ -6,21 +6,16 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from VipX import app  
 
 photo = [
-    "https://telegra.ph/file/1b819cfbcb2a2d3c738f6.jpg",
-    "https://telegra.ph/file/3021c823c7f006658682f.jpg",
-    "https://telegra.ph/file/05561f0fbf323e057ab87.jpg",
-    "https://telegra.ph/file/7a6b51ee0077724254ca7.jpg",
-    "https://telegra.ph/file/b3de9e03e5c8737ca897f.jpg",
-    "https://telegra.ph/file/0b6bb91986ef3a143033b.jpg",
-    "https://telegra.ph/file/2b5b66c9a0989afa0779a.jpg",
-    "https://telegra.ph/file/471339bb1901a007c0c2f.jpg",
-    "https://telegra.ph/file/ab7d958d707ef649bc3c3.jpg",
-    "https://telegra.ph/file/4f877f2843f31fcc32242.jpg",
-    "https://telegra.ph/file/ecefaa3e00fb911826673.jpg",
-    "https://telegra.ph/file/2a10683a2166f7cf4940b.jpg",
-    "https://telegra.ph/file/cda35ca740e1229626e48.jpg",
-    "https://telegra.ph/file/9f7186cd3d87199426e03.jpg",
-    "https://telegra.ph/file/7fe39f1baa1a93b9a3f0e.jpg",
+    "https://graph.org/file/49c7711765c285f7e653a.mp4",
+    "https://graph.org/file/0bb559bf659fbae560246.mp4",
+    "https://graph.org/file/edabd6a56cd7e13d7b6bb.mp4",
+    "https://graph.org/file/11e823c75b26c70c76d22.mp4",
+    "https://graph.org/file/892490a7d76a662a1728f.mp4",
+    "https://graph.org/file/cb39dcc6a20fdf631161f.mp4",
+    "https://graph.org/file/4dae8308f03b43d289b95.mp4",
+    "https://graph.org/file/39662f7a343e2a95ea5c4.mp4",
+    "https://graph.org/file/8155d0dccaca1dd7e9994.jpg",
+    "https://graph.org/file/7d8afb4982c1949f0c9da.jpg",
     
 ]
 
