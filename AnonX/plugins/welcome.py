@@ -34,12 +34,14 @@ async def join_watcher(_, message):
             count = await app.get_chat_members_count(chat.id)
 
             msg = (
-                f"**𝐇ᴇʏ {message.from_user.mention}🌹**\n\n"
-                f"**𝐖ᴇʟᴄᴏᴍᴇ 𝐓ᴏ** {message.chat.title}\n➖➖➖➖➖➖➖➖➖➖➖\n"
-                f"**𝐂ʜᴀᴛ 𝐔sᴇʀɴᴀᴍᴇ:** @{message.chat.username}\n➖➖➖➖➖➖➖➖➖➖➖\n"
-                f"**𝐘ᴏᴜʀ 𝐈𝐃:** {message.from_user.id}\n➖➖➖➖➖➖➖➖➖➖➖\n"
-                f"**𝐘ᴏᴜʀ 𝐔sᴇʀɴᴀᴍᴇ:** @{message.from_user.username}\n➖➖➖➖➖➖➖➖➖➖➖\n"
-                f"**𝐘ᴏᴜ 𝐀ʀᴇ {count} 𝐌ᴇᴍʙᴇʀ𝐬 𝐇ᴇʀᴇ..🤩**"
+                f"**𝐇ᴇʏ {message.from_user.mention}🌹**\n\n◈ •━━━━━ ⸙ ♡ ⸙ ━━━━━• ◈\n"
+                f"**𝐖ᴇʟᴄᴏᴍᴇ 𝐓ᴏ** {message.chat.title}💥\n"
+                f"**𝐂ʜᴀᴛ 𝐔sᴇʀɴᴀᴍᴇ:** @{message.chat.username}💫\n"
+                f"**𝐘ᴏᴜʀ 𝐈𝐃:** {message.from_user.id}💌\n"
+                f"**𝐘ᴏᴜʀ 𝐔sᴇʀɴᴀᴍᴇ:** @{message.from_user.username}👀\n"
+                f"**𝐘ᴏᴜ 𝐀ʀᴇ {count} 𝐌ᴇᴍʙᴇʀ𝐬 𝐇ᴇʀᴇ🤩**\n◈ •━━━━━ ⸙ ♡ ⸙ ━━━━━• ◈\n\n"
+                f"**𝐈 𝐇ᴏᴘᴇ 𝐘ᴏᴜ 𝐀ʀᴇ 𝐄ɴᴊᴏʏɪɴɢ 𝐘ᴏᴜʀ 𝐃ᴀʏ!!💝\n"
+                f"**𝐊ᴇᴇᴘ 𝐒ᴍɪʟɪɴɢ! 𝐆ᴏᴅ 𝐁ʟᴇss 𝐘ᴏᴜ!!😄"
             )
             await app.send_photo(message.chat.id, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton(f"🥳ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴄʜᴀᴛ🥳", url=f"https://t.me/{app.username}?startgroup=true")]
