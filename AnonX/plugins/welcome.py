@@ -3,7 +3,7 @@ from pyrogram import Client
 from pyrogram.types import Message
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from VipX import app  
+from AnonX import app  
 
 photo = [
     "https://graph.org/file/49c7711765c285f7e653a.mp4",
@@ -39,5 +39,5 @@ async def join_watcher(_, message):
                 f"**𝐊ᴇᴇᴘ 𝐒ᴍɪʟɪɴɢ! 𝐆ᴏᴅ 𝐁ʟᴇss 𝐘ᴏᴜ!!😄"
             )
             await app.send_photo(message.chat.id, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton(f"🥳ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴄʜᴀᴛ🥳", url=f"https://t.me/{app.username}?startgroup=true")]
+            [InlineKeyboardButton(f"👽𝐓ᴇʟᴇᴘᴏʀᴛ 𝐌ᴇ 𝐅ʀᴏᴍ 𝐇ᴇʀᴇ👽", url=f"https://t.me/{app.username}?startgroup=true")]
          ]))
