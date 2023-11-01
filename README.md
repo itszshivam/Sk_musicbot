@@ -1,7 +1,7 @@
-### 🌷𝐕𝐈𝐒𝐈𝐓𝐎𝐑𝐒🌷
+### 🌷gaurav🌷
 
 <!--
-**itszshivam/itszshivam** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**imgauravrajput/imgauravrajput** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 
 <p align="center">
@@ -18,11 +18,11 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/itszshivam/SK_musicbot/stargazers"><img src="https://img.shields.io/github/stars/itszshivam/SK_musicbot?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
-<a href="https://github.com/itszshivam/SK_musicbot/network/members"> <img src="https://img.shields.io/github/forks/itszshivam/SK_musicbot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
-<a href="https://github.com/itszshivam/SK_musicbot/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://github.com/imgauravrajput/Sankimusci_bot/stargazers"><img src="https://img.shields.io/github/stars/itszshivam/SK_musicbot?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
+<a href="https://github.com/imagauravrajput/Sankimusci_bot/network/members"> <img src="https://img.shields.io/github/forks/itszshivam/SK_musicbot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/imgauravrajput/Sankimusci_bot/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
-<a href="https://github.com/itszshivam/SK_musicbot/commits/AnonymousX1025"> <img src="https://img.shields.io/github/last-commit/itszshivam/SK_musicbot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+<a href="https://github.com/imgauravrajput/Sankimusci_bot/commits/AnonymousX1025"> <img src="https://img.shields.io/github/last-commit/itszshivam/SK_musicbot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
 </p>
 
 <p align="center">
@@ -31,9 +31,10 @@
 
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
+    ¬[ DEPLOY ON RAILWAY] ¬
 </h3>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/itszshivam/SK_musicbot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/imgauravrajput/Sankimusci_bot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʟᴏᴄᴀʟ ʜᴏsᴛ/ ᴠᴘs 」─
